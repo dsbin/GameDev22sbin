@@ -9,7 +9,7 @@ Adding:
 <input type=button value="Answer" onclick="{
     x = document.getElementById('myNum01').value
     y = document.getElementById('myNum100').value
-    document.getElementById('myDiv01').innerHTML  = x + y
+    document.getElementById('myDiv01').innerHTML  = (parseFloat(x) + parseFloat(y))
     }"><br><br>
 
 <Div id="myDiv01" >...</Div><br><br>
@@ -44,7 +44,7 @@ Multiplying:
      
 
 Cosine of:
-    <input id="myNum4" type=Number value=150 ><br><br>*Math.PI / 180
+    <input id="myNum4" type=Number value=1 ><br><br>*Math.PI / 180
 <input type=button value="Answer" onclick="{
     x = document.getElementById('myNum04').value
     document.getElementById('myDiv04').innerHTML = Math.cos(x*Math.PI) 
