@@ -2,7 +2,7 @@ Version 0.0.1.1
 
 <h2 align=center>t3a05-input output by Subin.html</h2>
 
-(7) Adding numbers:  
+(1) Adding numbers:  
 <input id="myNum01" type=text value=5 ><br><br> +
 <input id="myNum100" type=text value=100 ><br><br>
 <input type=button value="Answer" onclick="{
@@ -13,31 +13,22 @@ Version 0.0.1.1
 
 <span id="myDiv05" >...</Span><br><br>
 
+<p>
 
-(6) Subtracting numbers:  
-<input id="myText04" type=text value=10 ><br><br> -
-<input id="myText200" type=text value=8><br><br>
+2) Subtracting numbers:  
+<input id="myNum02" type=text value=10 ><br><br> -
+<input id="myNum200" type=text value=8><br><br>
 <input type=button value="Answer" onclick="{
-    x = document.getElementById('myText04').value
-    y = document.getElementById('myText200').value
-    document.getElementById('mySpan04').innerHTML = x-y
+    x = document.getElementById('myNum02').value
+    y = document.getElementById('myNum200').value
+    document.getElementById('myDiv02').innerHTML = x-y
     }"><br><br>
 
-<span id="mySpan04" >...</Span><br><br>
+<span id="myDiv02" >...</Span><br><br>
 
-<P>
+<p>
 
 
                                            
                                            
 
-<input id="myText03" type=number value="4" ><br>
-
-<input type=button value="see answer" onclick="{
-    let myText03 = parseFloat(document.getElementById('myText03').value) 
-    let myAnswer = myText03 * mtText03
-    document.getElementById('myText03').innerHTML
-    myIn03 + ' squared = ' + myAnswer
-}"><br><br>
-      
-  <div id="myDiv03" >...</div>
