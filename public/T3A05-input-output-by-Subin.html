@@ -3,7 +3,7 @@ Version 0.0.1.1
 <h2 align=center>t3a05-input output by Subin.html</h2>
 
 
-Adding numbers:  
+Adding:  
 <input id="myNum01" type=text value=50 ><br><br> +
 <input id="myNum100" type=text value=100 ><br><br>
 <input type=button value="Answer" onclick="{
@@ -16,7 +16,7 @@ Adding numbers:
 
 <P>
 
-Subtracting numbers:  
+Subtracting:  
 <input id="myText04" type=text value=30 ><br><br> -
 <input id="myText200" type=text value=5 ><br><br>
 <input type=button value="Answer" onclick="{
@@ -28,7 +28,19 @@ Subtracting numbers:
 <span id="mySpan04" >...</Span><br><br>
 
 <P>
-                  
+
+Multiplying:  
+<input id="myNum03" type=text value=2 ><br><br>*
+<input id="myText300" type=text value=9 ></br></br>
+<input type=button value="Answer" onclick="{
+    x = document.getElementById('my Num03').value 
+    y = document.getElementById('myNum100').value
+    document.getElementById('myDiv03').innerHTML = x * y
+    }"><br><br>
+
+<span id="mySpan03" >...</Span><br><br>
+
+<P>
 
 
                                            
