@@ -41,7 +41,20 @@ Subtracting by 100:
 <Div id="myDiv03" >...</Div><br><br>
 
 <P>
+    
+Subtracting by 10:  
+<input id="myNum04" type=Number value=50 ><br><br> -
+<input id="myNum400" type=Number value=10 ><br><br>
+<input type=button value="Answer" onclick="{
+    x = document.getElementById('myNum04').value
+    y = document.getElementById('myNum400').value
+    document.getElementById('myDiv04').innerHTML = (parseFloat(x) - parseFloat(y))
+    }"><br><br>
 
+<Div id="myDiv04" >...</Div><br><br>
+
+<P>
+    
 Multiplying:  
 <input id="myNum03" type=Number value=2 ><br><br>*
 <input id="myNum300" type=text value=9 ></br></br>
