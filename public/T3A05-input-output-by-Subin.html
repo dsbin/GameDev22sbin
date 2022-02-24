@@ -3,7 +3,7 @@ Version 0.0.1.1
 <h2 align=center>t3a05-input output by Subin.html</h2>
 
 
-Adding:  
+Adding by 100:  
 <input id="myNum01" type=Number value=50 ><br><br> +
 <input id="myNum100" type=text value=100 ><br><br>
 <input type=button value="Answer" onclick="{
@@ -16,6 +16,18 @@ Adding:
 
 <P>
 
+Adding by 10:  
+<input id="myNum02" type=Number value=50 ><br><br> +
+<input id="myNum200" type=text value=10 ><br><br>
+<input type=button value="Answer" onclick="{
+    x = document.getElementById('myNum02').value
+    y = document.getElementById('myNum200').value
+    document.getElementById('myDiv02').innerHTML  = (parseFloat(x) + parseFloat(y))
+    }"><br><br>
+
+<Div id="myDiv02" >...</Div><br><br>
+
+<P>    
 Subtracting:  
 <input id="myText02" type=Number value=30 ><br><br> -
 <input id="myText200" type=text value=5 ><br><br>
