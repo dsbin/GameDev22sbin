@@ -5,7 +5,7 @@ Version 0.0.1.1
 
 Adding by 100:  
 <input id="myNum01" type=Number value=50 ><br><br> +
-<input id="myNum100" type=text value=100 ><br><br>
+<input id="myNum100" type=Number value=100 ><br><br>
 <input type=button value="Answer" onclick="{
     x = document.getElementById('myNum01').value
     y = document.getElementById('myNum100').value
@@ -18,7 +18,7 @@ Adding by 100:
 
 Adding by 10:  
 <input id="myNum02" type=Number value=50 ><br><br> +
-<input id="myNum200" type=text value=10 ><br><br>
+<input id="myNum200" type=Number value=10 ><br><br>
 <input type=button value="Answer" onclick="{
     x = document.getElementById('myNum02').value
     y = document.getElementById('myNum200').value
@@ -31,7 +31,7 @@ Adding by 10:
     
 Subtracting by 100:  
 <input id="myNum03" type=Number value=50 ><br><br> -
-<input id="myNum300" type=text value=100 ><br><br>
+<input id="myNum300" type=Number value=100 ><br><br>
 <input type=button value="Answer" onclick="{
     x = document.getElementById('myNum03').value
     y = document.getElementById('myNum300').value
@@ -55,31 +55,30 @@ Subtracting by 10:
 
 <P>
     
-Multiplying:  
-<input id="myNum03" type=Number value=2 ><br><br>*
-<input id="myNum300" type=text value=9 ></br></br>
+Multiplying by 100:  
+<input id="myNum05" type=Number value=50 ><br><br>*
+<input id="myNum500" type=Number value=100 ></br></br>
 <input type=button value="Answer" onclick="{
-    x = document.getElementById('myNum03').value 
-    y = document.getElementById('myNum300').value
-    document.getElementById('myDiv03').innerHTML = x * y
+    x = document.getElementById('myNum05').value 
+    y = document.getElementById('myNum500').value
+    document.getElementById('myDiv05').innerHTML = x * y
     }"><br><br>
 
-<Div id="myDiv03" >...</Div><br><br>
-
-<P>
- 
-Adding:  
-<input id="myNum04" type=Number value=50 ><br><br> +
-<input id="myNum400" type=text value=10 ><br><br>
-<input type=button value="Answer" onclick="{
-    x = document.getElementById('myNum04').value
-    y = document.getElementById('myNum400').value
-    document.getElementById('myDiv04').innerHTML  = (parseFloat(x) + parseFloat(y))
-    }"><br><br>
-
-<Div id="myDiv04" >...</Div><br><br>
+<Div id="myDiv05" >...</Div><br><br>
 
 <P>
 
+Multiplying by 10:  
+<input id="myNum06" type=Number value=50 ><br><br>*
+<input id="myNum600" type=Number value=10 ></br></br>
+<input type=button value="Answer" onclick="{
+    x = document.getElementById('myNum06').value 
+    y = document.getElementById('myNum600').value
+    document.getElementById('myDiv06').innerHTML = x * y
+    }"><br><br>
+
+<Div id="myDiv06" >...</Div><br><br>
+
+<P>
      
      
