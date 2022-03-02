@@ -8,8 +8,8 @@ Vaersion 0.0.1.1
 <input id="myText01" type=text value="The Dog" >  
   
 <input type=button value="Show Variable" onclick="{
-    x = document.getElementById('myText01').value
-    document.getElementById('myDiv01').innerHTML  = x
+    let myIn01 = document.getElementById('myText01').value
+    document.getElementById('myDiv01').innerHTML  = myIn01
     }"><br>
 
 <input type=button value="Using no Variable" onclick="{
