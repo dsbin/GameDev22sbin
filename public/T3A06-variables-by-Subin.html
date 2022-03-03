@@ -21,15 +21,22 @@ Vaersion 0.0.1.1
  <br> 
 
 <h4> stores numbers</h4>
+<input id="myText03" type=text value=5 >
+<input id="myText04" type=text value=10 ><br>
     
-<input id="myText03" type=text value=5 ><br>
-<input type=button value="show number" onclick="{
+    
+<input type=button value="Show Number 5" onclick="{
     x = document.getElementById('myText03').value
     document.getElementById('myDiv03').innerHTML  = x
     }"><br><br>
 
+<input type=button value="Show Number 50" onclick="{
+   document.getElementById('myDiv03').innerHTML  = document.getElementById('myText04').value                                               
+   }"><br>                                                                                             
+                                                      
 <Div id="myDiv03" >...</Div><br><br>
 
+    
 
   
   
