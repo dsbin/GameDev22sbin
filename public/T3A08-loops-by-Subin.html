@@ -31,4 +31,30 @@ Version 0.0.1
 
 <div id="myDiv01"><font color=red>...</font></div>
 
+ 
+    
+    
+    
+    
+<body style="color:red">store this input variable into x:</b>
+<input id="myText01" type=text value="30" ><br><br>
+    
+<input type button value="show" onclick="{
+                                             
+for (let i=0; i<parseInt(document.getElementById('myText01').value); i++){
+myTemp += '<b style=color:red>' + 'Loop Number: ' + i + '<br></b>
+ }
+document.getElementById('myDiv01').innerHTML = myTemp
+  }"><br><br>
+    
+                                             
+
+<div id="myDiv01">...</div><br>
+                                             
+                                             
+                                                                               
+    
+    
+    
+    
 
