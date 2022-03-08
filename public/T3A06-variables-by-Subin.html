@@ -41,7 +41,28 @@ border-style:line; border-width:700; width:700"  }" ><span style="color:black">
 <Div id="myDiv03" >...</Div><br><br>
     
 
-     
+                  
+<html>
+<body>
+
+<input id="myText05" type=text value=5 >
+<input id="myText06" type=text value=6 ><br>               
+                         
+<script>
+var x = 5;
+var y = 6;
+var z = x + y;
+<input type=button value="Show Number" onclick="{
+x = document.getElementById('myText05').value
+y = document.getElementById('myText06').value
+document.getElementById('myDiv05').innerHTML = x
+}"><br>
+"The value of z is: " + z;
+</script>
+                   
+</html>
+</body>
+         
   
                      
                      
