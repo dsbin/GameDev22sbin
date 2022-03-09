@@ -10,7 +10,26 @@ Version 0.0.1
 
 <h4> exmaple working code </h4>
     
+<input id="myNum01" type=number value="5" ><br>
+  
 
+<input type=button value="Basic For Loop with Decisions" onclick="{
+    document.getElementById('myDiv01').innerHTML = ''
+    let myTemp = ''
+    
+    let myMax = parseInt(document.getElementById('myNum01').value)
+                                                                  
+    for (let myLoop < myMax; myLoop++ ){
+    
+       if (myLoop == 3){
+           myTemp += ' cool '
+      }
+      myTemp += 'Loop number: ' + myLoop + i + '<br>'
+     }
+     document.getElementById('myDiv01').innerHTML = myTemp
+}">
+
+<div id="myDiv01"><font color=red>...</font></div>
     
     
     
