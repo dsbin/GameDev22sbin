@@ -6,14 +6,14 @@ Version 0.0.1
    
 <h4> If Statement</h4>
    
-<input id=" mytext01" type=number value="4" ><br>
+<input id=" myNum01" type=number value="4" ><br>
 
 x = document.getElementById('myText01').value
                                                
 <input type=button value="Simple if statement for Decision Making" onclick="{
-   let myIn01 = (document.getElementById('myNum01').value)
+   let myIn01 = ParseFloat(document.getElementById('myNum01').value)
    id (myIn01) >=3){
-        document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
+       document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
   }                                                                          
 }">
    
