@@ -6,16 +6,16 @@ Version 0.0.1
    
 <h4> If Statement</h4>
    
-<input id= "myNum01" type=number value="4" ><br>
+<input id= "myNum01" class="button" type=number value="4" ><br>
                                                
-<input type=button value="Simple if statement for Decision Making" onclick="{
+<input type=button class="button2" value="Simple if statement for Decision Making" onclick="{
    let myIn01 = parseFloat(document.getElementById('myNum01').value)
    if (myIn01) >=3){
        document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
   }                                                                          
 }">
    
-<input type=button value="if...else" onclick="
+<input type=button class="button" value="if...else" onclick="
    let myIn03 = parseFloat(document.getElementById('myNum01').value)
    if (myIn03) > 3){
         document.getElementById('myDiv01').innerHTML = myIn03 + ' is greater than 3'
@@ -24,7 +24,7 @@ Version 0.0.1
 }">
                                               
                                               
-<input type=button value="Complex if" onclick="{
+<input type=button class="button" value="Complex if" onclick="{
    let myIn01 = parseFloat(document.getElementById('myNum01').value)
    if ((myIn03 = !=3 || myIn03 > -3) && myIn03 <=100 ){
         document.getElementById('myDiv01').innerHTML = myIn03 + ' is complex
