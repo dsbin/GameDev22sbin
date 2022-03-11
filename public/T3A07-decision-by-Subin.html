@@ -10,26 +10,26 @@ Version 0.0.1
                                                
 <input type=button value="Simple if statement for Decision Making" onclick="{
    let myIn01 = parseFloat(document.getElementById('myNum01').value)
-   id (myIn01) >=3){
+   if (myIn01) >=3){
        document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
   }                                                                          
 }">
    
 <input type=button value="if...else" onclick="
-   let myIn01 = parseFloat(document.getElementById('myNum01').value)
-   if (myIn01) >=3){
-        document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
+   let myIn02 = parseFloat(document.getElementById('myNum01').value)
+   if (myIn02) > 3){
+        document.getElementById('myDiv01').innerHTML = myIn02 + ' is greater than 3'
    } else {
-        document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'}
+        document.getElementById('myDiv01').innerHTML = myIn02 + ' is greater than 3'}
 }">
                                               
                                               
 <input type=button value="Complex if" onclick="{
    let myIn01 = parseFloat(document.getElementById('myNum01').value)
-   if ((myIn01 = !=3 || myIn01 > -3) && myIn01 <=100 ){
-        document.getElementById('myDiv01').innerHTML = myIn01 + ' is complex
+   if ((myIn02 = !=3 || myIn02 > -3) && myIn02 <=100 ){
+        document.getElementById('myDiv01').innerHTML = myIn02 + ' is complex
    } else {
-        document.getElementById('myDiv01').innerHTML = myIn01 + ' is not complex
+        document.getElementById('myDiv01').innerHTML = myIn02 + ' is not complex
 }">
    
    
