@@ -1,0 +1,45 @@
+Version 0.0.1
+<h2 align=center>T3A10-events-by-Subin.html </h2>
+
+<H4> Example Function code</h4>
+<pre>
+&lt input type=button value="Example onClick" onClick="{
+    alert('hi')
+}" &gt
+</pre>
+
+<h4> Example working code</h4>
+
+<input type=text id="myText01" value="3"><br>
+
+<input type=button value="Example onClick" onClick="{
+  document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
+}">
+
+<div id="myDiv01">...</div>
+
+<b id="myB01" onMouseOut="{
+   document.getElementById('myB01').innerHTML = 'This is bold'
+}"     onMouseOver="{
+ document.getElementById('myB01').innerHTML = 'This is cool'
+}"  > This is bold</b> 
+
+<br>
+
+<button ondblclick="myFunction()">Double-click me</button>
+
+<p id="myB01"></p>
+
+<p>double click</p>
+
+<script>
+function myFunction() {
+  document.getElementById("myB01").innerHTML = "yay";
+}
+</script>            
+                          
+                          
+                          
+                          
+                          
+                          
