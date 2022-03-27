@@ -28,14 +28,36 @@ Version 0.0.1
 }"  > This is bold</b> 
 <br>
 
+
+
 <u> onDbClick </u>
 <button ondblclick="myFunction()">Double-click me</button>
-<p id="myB01"></p>
+<p id="myB02"></p>
 <script>
 function myFunction() {
-  document.getElementById("myB01").innerHTML = "yay";
+  document.getElementById("myB02").innerHTML = "yay";
 }
-</script><br>   
+</script><br>
+
+
+
+
+<u> onFocus </u>
+<p>When you enter the input field, a function is triggered which sets the background color to yellow. When you leave the input field, a function is triggered which sets the background color to red.</p>
+
+Enter your name: <input type="text" id="myText3" onfocus="focusFunction()" onblur="blurFunction()">
+
+<script>
+// Focus = Changes the background color of input to yellow
+function focusFunction() {
+  document.getElementById("myText3").style.background = "pink";
+}
+
+// No focus = Changes the background color of input to red
+function blurFunction() {
+  document.getElementById("myText3").style.background = "orange";
+}
+</script>
 
 
                           
