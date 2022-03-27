@@ -10,6 +10,9 @@ Version 0.0.1
 
 <h4> Example working code</h4>
 
+
+
+<u> onClick </u>
 <input type=text id="myText01" value="3"><br>
 
 <input type=button value="Example onClick" onClick="{
@@ -23,20 +26,26 @@ Version 0.0.1
 }"     onMouseOver="{
  document.getElementById('myB01').innerHTML = 'This is cool'
 }"  > This is bold</b> 
-
 <br>
 
+<u> onDbClick </u>
 <button ondblclick="myFunction()">Double-click me</button>
-
 <p id="myB01"></p>
-
-
 <script>
 function myFunction() {
   document.getElementById("myB01").innerHTML = "yay";
 }
-</script>            
-                          
+</script><br>   
+
+<u> onChange </u>                      
+<br>Modify the text in the input field then click outside the field to fire the onchange event</br>
+<br>
+Enter some text: <input type="text" name="txt" value="Hello" onchange="myFunction(this.value)">
+<script>
+function myFunction(val) {
+  alert("The input value has changed. The new value is: " + val);
+}
+</script><br>
                           
                           
                           
