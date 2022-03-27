@@ -43,17 +43,17 @@ function myFunction() {
 
 
 <u> onFocus </u>
-<p>When you enter the input field, a function is triggered which sets the background color to yellow. When you leave the input field, a function is triggered which sets the background color to red.</p>
+<p>When you enter the input field, a function is triggered which sets the background color to pink. When you leave the input field, a function is triggered which sets the background color to orange.</p>
 
 Enter your name: <input type="text" id="myText3" onfocus="focusFunction()" onblur="blurFunction()">
 
 <script>
-// Focus = Changes the background color of input to yellow
+// Focus = Changes the background color of input to pink
 function focusFunction() {
   document.getElementById("myText3").style.background = "pink";
 }
 
-// No focus = Changes the background color of input to red
+// No focus = Changes the background color of input to orange
 function blurFunction() {
   document.getElementById("myText3").style.background = "orange";
 }
