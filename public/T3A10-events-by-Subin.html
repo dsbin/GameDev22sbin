@@ -26,34 +26,23 @@ Version 0.0.1
  document.getElementById('myB01').innerHTML = 'This is cool'
 }"  > </b>
 <br>
-
-
-
-<u> onDbClick </u>
-<button ondblclick="myFunction()">Double-click me</button>
-<p id="myText02"></p>
-<script>
-function myFunction() {
-  document.getElementById("myText02").innerHTML = "yay";
-}
-</script>
   
     
     
 <u> onFocus </u>
 <p>While typing the background color turn to pink. When you leave the background color turns to orange.</p>
 
-Enter your name: <input type="text" id="myText3" onfocus="focusFunction()" onblur="blurFunction()">
+Enter your name: <input type="text" id="myText02" onfocus="focusFunction()" onblur="blurFunction()">
 
 <script>
 // Focus = Changes the background color of input to pink
 function focusFunction() {
-  document.getElementById("myText3").style.background = "pink";
+  document.getElementById("myText02").style.background = "pink";
 }
 
 // No focus = Changes the background color of input to orange
 function blurFunction() {
-  document.getElementById("myText3").style.background = "orange";
+  document.getElementById("myText02").style.background = "orange";
 }
 </script>
 <br>
@@ -83,13 +72,13 @@ function normalImg(x) {
                         
 <br>                        
 <u> onBlur </u>
-Enter text: <input type="text" id="myText05" onblur="myFunction()">
+Enter text: <input type="text" id="myText04" onblur="myFunction()">
 
 <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
 
 <script>
 function myFunction() {
-  var x = document.getElementById("myText05");
+  var x = document.getElementById("myText04");
   x.value = x.value.toUpperCase();
 }
 </script>
@@ -100,19 +89,81 @@ function myFunction() {
 <u> onKeyDown </u>                                
 <p>Press and hold down a key to set a red background color. Release the key to set a green background color.</p>
 
-<input type="text" id="myText07" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+<input type="text" id="myText05" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
 
 <script>
 function keydownFunction() {
-  document.getElementById("myText07").style.backgroundColor = "yellow";
+  document.getElementById("myText05").style.backgroundColor = "yellow";
 }
 
 function keyupFunction() {
-  document.getElementById("myText07").style.backgroundColor = "purple";
+  document.getElementById("myText05").style.backgroundColor = "purple";
 }
 </script>
                                             
-                                            
-                                            
+
+                                                                      
+<br>                        
+<u> onKeyPress </u> 
+<style>
+.droptarget {
+  float: left; 
+  width: 100px; 
+  height: 35px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+
+<p>Drag the word between the two rectangles:</p>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="myText06">Drag me!</p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<p style="clear:both;" id="myText06"></p>
+
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("myText06", event.target.id);
+  document.getElementById("myText06").innerHTML = "Drag me!";
+}
+
+function dragEnd(event) {
+  document.getElementById("myText06").innerHTML = "Drag me!";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("myText06");
+  event.target.appendChild(document.getElementById(data));
+}
+</script>                                                                      
+<br>
+                                                  
+
+                                                  
+<br>                        
+<u> onKeyPress </u> 
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
+                                                                      
                                             
                                             
