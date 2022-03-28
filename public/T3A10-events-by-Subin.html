@@ -104,7 +104,7 @@ function keyupFunction() {
 
                                                                       
 <br>                        
-<u> onKeyPress </u> 
+<u> onDragStart </u> 
 <style>
 .droptarget {
   float: left; 
@@ -152,9 +152,34 @@ function drop(event) {
                                                   
 <br>                        
 <u> onKeyPress </u> 
-                                                                      
-                                                                      
-                                                                      
+<p>press any key from the keyboard</p>
+
+<input type="myText07" onkeypress="myFunction()">
+
+<script>
+function myFunction() {
+  alert("you have pressed a key");
+}
+</script>                                                                      
+<br>
+                                
+                                
+                                                  
+<br>                        
+<u> onTouchStart </u>                                
+<h1>Touch This</h1>
+
+<p ontouchstart="myFunction()">Touch this paragraph to see a reply</p>
+
+<p><b>Note:</b> This example is for touch devices only</p>
+
+<p id="myText07"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("myText07").innerHTML = "	Hello, now bye";
+}
+</script>                                                                      
                                                                       
                                                                       
                                                                       
