@@ -78,9 +78,10 @@ function normalImg(x) {
 }
 </script>
 <br>              
-   
+    
                         
                         
+<br>                        
 <u> onBlur </u>
 Enter text: <input type="text" id="myText05" onblur="myFunction()">
 
@@ -93,5 +94,25 @@ function myFunction() {
 }
 </script>
 
-                                         
-                                         
+
+                                            
+<br>                        
+<u> onKeyDown </u>                                
+<p>Press and hold down a key to set a red background color. Release the key to set a green background color.</p>
+
+<input type="text" id="myText07" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+
+<script>
+function keydownFunction() {
+  document.getElementById("myText07").style.backgroundColor = "yellow";
+}
+
+function keyupFunction() {
+  document.getElementById("myText07").style.backgroundColor = "purple";
+}
+</script>
+                                            
+                                            
+                                            
+                                            
+                                            
