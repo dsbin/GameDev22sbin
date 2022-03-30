@@ -20,7 +20,7 @@ Version 0.0.1
 <b>age<b>: <input type=text id="mytext01" value=17 ><br>
 <b>name<b>: <input type=text id="myText2" value="fluffy" ><br>
 
-<input type="button" value="Example Class Set and Show Class Animal" onClick="{
+<input id= "myButton131" type="button" value="Example Class Set and Show Class Animal" onClick="{
 x = document.getElementById('myText01').value
 y = document.getElementById('myText02').value
 class myAnimal {
@@ -29,12 +29,13 @@ class myAnimal {
        This.myAge =passAge;   
      }
      myShow(){
-        document.getElementById('myDiv01').innerHTML = 'Hello '+this.myName + '. You are ' + this.myAge + ' years old<br>'
+        document.getElementById('myDiv131').innerHTML = 'Hello ' + this.myName + this.myAge 
      }
  }  // end class myAnimal
-    myDog = new myAnimal('snickers', 5)
+                                                                                                
+    myDog = new myAnimal('y +' is ',x)
     myDog.myShow() 
- }">
+ }"><br><br>
 
 <div id="myDiv01">...</div>
 
