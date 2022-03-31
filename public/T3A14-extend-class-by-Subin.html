@@ -39,11 +39,11 @@ class myCat extend myAnimal {
  }">
 
 <h4> Example extending Class code</h4>
+
 name: <input type=text id="myText02" value="Fluffy"
 age: <input type=text id="myText01" value="16 ><br>
 
-
-<input type=button id="myButton131" value="Show" onClick="{
+<input type=button id="myDiv01" value="Show" onClick="{
 document.getElementById('myText01').value
 document.getElementById('myText02').value
 class myAnimal {
@@ -52,7 +52,7 @@ class myAnimal {
       This.myAge =passAge;   
      }
      myShow(){
-       document.getElemenyById('myButton131').innerHTML = 'Hello ' + this.myName + this.myAge
+       document.getElemenyById('myDiv01').innerHTML = 'Hello ' + this.myName + this.myAge
      }
 }    // end class myAnimal
 
