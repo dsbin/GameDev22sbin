@@ -39,20 +39,27 @@ class myCat extend myAnimal {
  }">
 
 <h4> Example extending Class code</h4>
-Nothing: <input type=text id="myText01" value="useless at the moment"
+name: <input type=text id="myText02" value="Fluffy"
+age: <input type=text id="myText01" value="16 ><br>
 
-<input type=button value="Example Class Set and Show Class Animal" onClick="{
 
- class mycat extends myAnimal {
-     myShow(){
-       document.getElemenyById('myDiv01').innerHTML = this.myName  = ' is a great cat<br>'
+<input type=button id="myDiv01" value="Show" onClick="{
+document.getElementById('myText01').value
+document.getElementById('myText02').value
+class myAnimal {
+   constructor(passName, passAge) {
+      This.myName =passName;
+      This.myAge =passAge;   
      }
-}     // end extended class
+     myShow(){
+       document.getElemenyById('myDiv01').innerHTML = 'Hello ' + this.myName + this.myAge
+     }
+}    // end class myAnimal
 
-myPet = newCat('Fluffy', 14)
+myPet = newAnimal('Fluffy', 16)
 myPet.myShow()
       
-}">
+}"><br><br>
 
 <div id= "myDiv01">...</div>
                                                                             
