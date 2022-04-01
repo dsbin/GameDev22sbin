@@ -1,0 +1,54 @@
+Version 0.0.1
+
+<h2 align=center>T3A15-review-by-Subin.html</h2>
+  
+<body style="background-color:#E8C8D7;">
+  
+  
+  
+<h3>1. Input Output</h3>
+
+<input type="text" id="myText01" value="Hello" size="30">  
+    
+<input id="myButton123" type="button" value="Input / Output" onclick="{
+      document.getElementById('myDiv123').innerHTML = document.getElementById('myText01').value // note: use value not innerHTML                                                    
+}"><br><br>
+
+<div id='myDiv123'>...</div><br>
+  
+  
+  
+<h3>1. Input into variables</h3>
+  
+<input type="text" id="myText02" value="3.45" size="30">  + <input type="text" id="myText03" value="6.78" size="30"> 
+
+<input id="myButton124" type="button" value="Add the numbers" onclick="{
+
+   var my1 = document.getElementById('myText02').value  
+   var my2 = document.getElementById('myText03').value  
+   document.getElementById('myDiv124').innerHTML =   'Numbers added as strings ' +  my1 + ' + ' +  my2 + ' = ' +  (my1 + my2)  + '<br>'   
+   document.getElementById('myDiv124').innerHTML +=  'Numbers added as integers ' +  my1 + ' + ' +  my2 + ' = ' +  (parseInt(my1) + parseInt(my2))  + '<br>'   
+   document.getElementById('myDiv124').innerHTML +=  'Numbers added as rounded integers ' +  my1 + ' + ' +  my2 + ' = ' +  (Math.round(my1) + Math.round(my2))  + '<br>'                                                      
+   document.getElementById('myDiv124').innerHTML +=  'Numbers added as floating point (decimal) numbers ' +  my1 + ' + ' +  my2 + ' = ' +  (parseFloat(my1) + parseFloat(my2))  + '<br>'                                         
+   document.getElementById('myDiv124').innerHTML +=  'Numbers added using *1 trick ' +  my1 + ' + ' +  my2 + ' = ' +  (my1*1 + my2*1)  + '<br>'                                                       
+                                                                                                                          
+}"><br><br>
+
+<div id='myDiv124'>...</div><br>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
