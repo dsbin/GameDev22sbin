@@ -32,30 +32,25 @@ class myAnimal {
   
 
 
-<b style=> age : <input id="myText01" type=text value=17></b>
-<b style=> name: <input id="myText02" type=text value=fluffy><br></b>
+<b style="color:gold;"> age: <input id="myText01" type=text value=17><br></b>
+<b style="color:gold;"> name: <input id="myText02" type=text value=Fluffy><br></b>
 
-<b style=<input type=button value="Show (age)" onclick="{
+<b style="color:gold;"><input type=button value="Make and Show Object (age)" onclick="{
    x = document.getElementById('myText01').value
         let myObject = { 
         'age' : x,
         }
-document.getElementById('mySpan01').innerHTML ='<b style= 'myObject.age: ' + myObject.age
+document.getElementById('mySpan01').innerHTML ='<b style=color:gold>' + 'myObject.age: ' + myObject.age
 }" ><br></b>
 
-<span id="mySpan01" >...</Span><br>
+<span id="mySpan01" >...</Span><br><br>
 
-<input type=button value="Show (name)" onclick="{
+<input type=button value="Make and Show Object (name)" onclick="{
    y = document.getElementById('myText02').value   
         let myObject = { 
         'firstName' : y,
         } 
-document.getElementById('mySpan02').innerHTML ='<b style= 'my.firstName: ' + my.firstName
+document.getElementById('mySpan02').innerHTML ='<b style=color:gold>' + 'myObject.firstName: ' + myObject.firstName
 }" ><br><br>
 
-<span id="mySpan02" >...</Span><br><br>                                                                            
-                                                                            
-                                                                            
-                                                                            
-   
-   
+<span id="mySpan02" >...</Span><br><br>
