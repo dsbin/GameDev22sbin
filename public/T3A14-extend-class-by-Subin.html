@@ -1,68 +1,36 @@
-<script>
+
+Version 0.0.1
+
+<h2 align=center>T3A14-extend-class-by-Subin.html</h2>
+
+<body style="background-color:#E8C8D7;">
  
- class myAnimal {
-    constructor(passName, passName) {
+ 
+
+<b style="color:gold;">Know something more about Fluffy:<input id=""myText01"" type="text" value="Extend a class" onclick="{
+class myAnimal {
+    constructor(passName, passAge) {
        this.myName = passName;
        this.myAge = passAge;
     }
     myShow(){
-       document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName+'<br>'
+       document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
     }
- } // end class myAnimal
-  
-</script>
-
-Version 0.0.1
-<h2 align=center>T3A14-extend-class-by-Subin.html</h2>
-
-Extending a pre-existing Class<br>
-
-<h4> Example Class extend code</h4>
-<pre>
-
-class myCat extend myAnimal {
-
-    myShow(){
-      document.getElementById('myDiv').innerHTML = this.myName
-   }
-}
-
-</pre>
-
-<h4> Example classes extend code</h4>
-<pre>
-<input type=button value="show" onClick="{
-
-  myDog = new myAnimal('Snickers', 5)
-  myDog.myShow()
-                                         
- }">
-
-<h4> Example extending Class code</h4>
-
-x = name: <input type=text id="myText02" value="Fluffy"
-y = age: <input type=text id="myText01" value="16 ><br>
-
-<input type=button id="myDiv01" value="Show" onClick="{
-document.getElementById('myText01').value
-document.getElementById('myText02').value
-class myAnimal {
-   constructor(passName, passAge) {
-      This.myName =passName;
-      This.myAge =passAge;   
-     }
+ }  // end class myAnimal
+                                                             
+class myCat extends myAnimal {                                                                      
      myShow(){
-       document.getElemenyById('myDiv01').innerHTML = 'Hello ' + this.myName + this.myAge
-     }
-}    // end class myAnimal
-
-myPet = newAnimal('Fluffy', 16)
-myPet.myShow()
-      
+       document.getElementById('myDiv131').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years old<br>'
+    }                                                                   
+}    // end extended class myCat
+                                                                     
+                                                              
+                                                                                                                                                                                                       
+   myPet = new myCat('Fluffy', 14)
+   myPet.myShow()                                                                           
 }"><br><br>
 
-<div id= "myDiv01">...</div>
-                                                                            
+<div id='myDiv131'>...</div><br>                           
                                                                             
                                                                             
    
