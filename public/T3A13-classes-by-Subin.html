@@ -1,19 +1,6 @@
 Version 0.0.1
 <h2 align=center>T3A13-classes-by-Subin.html</h2
-  
-<h4> Example Classes code</h4>
-<pre>
-   constructor(passName, passAge) {
-       This.myName =passName;
-       This.myAge =passAge;   
-   }
-   myShow(){
-      document.getElementById('myDiv01').innerHTML = 'Hello '+this.myName + '. You are ' + this.myAge + ' years old<br>'
-   }
-  myDog = new myAnimal('snickers', 5)
-  myDog.myShow()
-    
-</pre>
+ 
 
 <h4> Example working Classes code</h4> 
 
@@ -37,8 +24,38 @@ class myAnimal {
  }">
 
 <div id="myDiv01">...</div>
+  
+  
+  
+  
+  
+  
+  
 
-                                                                            
+<b style="color:gold;"><h1 align=center>T3A16-Objects-Jaehee.html</h1><br></b>
+
+<b style="color:gold;">Enter an age into the object: <input id="myText01" type=text value=17><br><br><br></b>
+<b style="color:gold;">Enter an name into the object: <input id="myText02" type=text value=Jaehee><br><br><br></b>
+
+<b style="color:gold;"><input type=button value="Make and Show Object (age)" onclick="{
+   x = document.getElementById('myText01').value
+        let myObject = { 
+        'age' : x,
+        }
+document.getElementById('mySpan01').innerHTML ='<b style=color:gold>' + 'myObject.age: ' + myObject.age
+}" ><br><br><br></b>
+
+<span id="mySpan01" >...</Span><br><br>
+
+<input type=button value="Make and Show Object (name)" onclick="{
+   y = document.getElementById('myText02').value   
+        let myObject = { 
+        'firstName' : y,
+        } 
+document.getElementById('mySpan02').innerHTML ='<b style=color:gold>' + 'myObject.firstName: ' + myObject.firstName
+}" ><br><br>
+
+<span id="mySpan02" >...</Span><br><br>                                                                            
                                                                             
                                                                             
                                                                             
