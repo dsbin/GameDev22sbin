@@ -1,6 +1,6 @@
 <h1 align=center>T3A16-spy-by-Subin.html</h1>
 
-<textarea id="myArea01" rows=4 cols=70>HELLO HOW ARE YOU TODAY</textarea><br> 
+<textarea id="myArea01" rows=4 cols=70>Hello how are you</textarea><br> 
 
 <input type=button value="encrypt" onclick="{
    let myTemp = ''
@@ -23,7 +23,7 @@
 
 <input type=button value="decrypt" onclick="{
    let myTemp = ''
-   myString = document.getElementById('myArea02').value.toUpperCase().split('')
+   myString = document.getElementById('myArea02').value.toLowerCase().split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
       if (myString[myLoop] == 'f') {myTemp  = 'e'} 
