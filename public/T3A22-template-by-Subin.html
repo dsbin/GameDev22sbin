@@ -33,7 +33,7 @@ function myHitOther(my1,my2){
 
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
-       alert('you Did it')  
+       alert('you lose')  
        document.getElementById('myImg01').style.left = '20px'
        location = 't2a13-keydown.html'  // go to your next level
    }
@@ -48,8 +48,8 @@ function myCheckHit(){
 
 </script>
 
-<img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="https://pbs.twimg.com/media/EJgx_HGXUAEmWG_.jpg">
-<img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="https://pbs.twimg.com/media/EJgx_HGW4AE8anX.jpg">
+<img id="myImg01" style="position:absolute; width:100px; height:80px; top:150px; left:100px;"  src="https://pbs.twimg.com/media/EJgx_HGXUAEmWG_.jpg">
+<img id="myImg02" style="position:absolute; width:100px; height:80px; top:150px; left:400px;" src="https://pbs.twimg.com/media/EJgx_HGW4AE8anX.jpg">
 
 <input type=button value="Auto Background Left" onclick="{
   clearInterval(myClock)
@@ -61,9 +61,21 @@ function myCheckHit(){
   }, 100)
     
 }">
+ 
+   
+<input type=button value="Stop background" onclick="{
+  clearInterval(myClock)
+  let myTemp = '100px 0px'
+  myClock = setInterval(function(){
+      myGlobalX -= 5
+      myTemp =  '100px ' - myGlobalX - 'px'       //  myGlobalX + 'px ' - '100px' 
+      document.getElementById('myBody').style.backgroundPosition = myTemp
+  }, 100)
+    
+}">
 
 
-<input type=button value="put Mymelody and Kuromi back together" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+<input type=button value="move" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
   myCheckHit()     // checks for all collisions
 }"><br><br>
