@@ -6,18 +6,18 @@ Version 0.0.1
 
 <h4> eample working object code <h4>
   
-    <textarea id="myTextAreaObject" rows="8" cols="70" wrap="false">{
-   "firstName": "John",
-   "lastName": "Doe",
-   "age": 50,
-   "eyeColor": "blue"
+    <textarea id="myText01" rows="8" cols="70" wrap="false">{
+   "firstName": "Jessie",
+   "lastName": "Rose",
+   "age": 30,
+   "eyeColor": "green"
 }
     </textarea><br> 
     
 <input id="myButton128" type="button" value="Store as an object" onclick="{
       
     var myPerson = {}                                                              
-    myPerson = JSON.parse(document.getElementById('myTextAreaObject').value)   
+    myPerson = JSON.parse(document.getElementById('myText01').value)   
                                                                          
     document.getElementById('myDiv128').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'
                                                        
