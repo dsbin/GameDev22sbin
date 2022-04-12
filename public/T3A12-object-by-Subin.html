@@ -1,57 +1,31 @@
 Version 0.0.1
 
 <h2 align=center>T3A12-object-by-Subin.html</h2>
-
-<a href=""></a><br>
+<body style="background-color:#E8C8D7;">
 
 
 <h4> eample working object code <h4>
   
-Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
-<input type=button value="Example Object Set and Show" OnClick="{
-
-  let myPerson = {
-    'firstName': 'John',
-    'lastName' : 'Doe',
-    'age'      : 50,
-    'eyeColor' : 'blue'
-  }
-
-   document.getElemntById('myDiv01').innerHTML = '<br>myPerson Object has
-properties: <br>'
-   document.getElemntById('myDiv01').innerHTML += 'firstName: ' +
-myPerson.firstNmae + '<br>'
-   docuemnt.getElementById('myDiv01').innerHTML += 'You do the others <br> '
-   
-}">
-
-<div id="myDiv01">...</div>
-
-<br>
-   
-
-  
-<h2> objects </h2>
-  
-<input type=text id="myText02" value="..."<br>
-<input type=button value="Example Object Set and Show" OnClick="{    
-  
-<script>
-// Create an object:
-const person = {
-  firstName: "John",
-  lastName: "Doe",
-  age: 50,
-  eyeColor: "blue,"
-};
-
-// Display some data from the object:
-document.getElementById("myText02").innerHTML =
-person.firstName + " is " + person.age + " years old.";
-</script>
+    <textarea id="myTextAreaObject" rows="8" cols="70" wrap="false">{
+   "firstName": "John",
+   "lastName": "Doe",
+   "age": 50,
+   "eyeColor": "blue"
+}
+    </textarea><br> 
     
-   
-                                                                
+<input id="myButton128" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject').value)   
+                                                                         
+    document.getElementById('myDiv128').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'
+                                                       
+                                                              
+}"><br><br>
+
+<div id='myDiv128'>...</div><br>
+                                               
                                                                 
                                                                 
                                                                 
