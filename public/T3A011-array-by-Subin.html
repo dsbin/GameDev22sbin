@@ -33,30 +33,26 @@ Document.getElementById('myDiv01').innerHTML = ' '
 }">
 
 <div id="myDiv01">...</div>
-
-
 <br>
 
+
+
+
+
+<p>append new elements to an array</p>
 
 <button onclick="myFunction()">Try it</button>
 
 <p id="myText02"></p>
 
 <script>
-const fruits = ["Banana", "Orange", "Apple"];
+const fruits = ["Red", "Orange", "Yellow","Green", "Blue"];
 document.getElementById("myText02").innerHTML = fruits;
-   
+
 function myFunction() {
-fruits[fruits.lenght] = "Lemon";
-      
-document.getElmentById("myText02").innerHTML = fruits;
+  fruits[fruits.length] = "Purple";
+  document.getElementById("myText02").innerHTML = fruits;
 }
 </script>
-      
-      
-      
-      
-                                                    
-                                                    
-                                                    
-                                                    
+
+                                              
