@@ -3,7 +3,7 @@
 <body style="background-color:#E8C8D7;">
    
 <script>
-   let myMax = 3      // 52 when working
+   let myMax = 9      // 52 when working
    let myCards = new Array(myMax)  
 </script>
 
@@ -22,16 +22,15 @@
 }">
 
 <input type=button value="Sort" onclick="{
-  let myTemp = 0
+ for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
+ myCards[myCards.sort()] = 0
+}
+                                             
+  let myTemp = ''
   for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
-     myCards[myCards.sort()] = 0
-  }
-  
-     for ( let myLoop = 0;   myLoop < myMax;  myLoop++){
      myTemp += myLoop + ' = '+ myCards[myLoop] + '<br>'
   }
    document.getElementById('myDiv01').innerHTML = myTemp
- 
 }">
 
 <div id="myDiv01"></div>
