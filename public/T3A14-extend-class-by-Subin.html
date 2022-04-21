@@ -1,12 +1,54 @@
-
 Version 0.0.1
 
-<h2 align=center>T3A14-extend-class-by-Subin.html</h2>
+<style>
+p {
+  border: 2px solid red;
+  outline: #9D699D
+ solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+}
+</style>
+<h2><p><h1 align=center>T3A14-extend-class-by-Subin.html</h1></p></h2>
+
+
+<style>
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid red;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+</style>
+
+<br>
+
+<h4><b style="border-style:double; border-color:C692FA; " >  Link Button to see more Raccoons</b><br></h4>
+
+
+<a href="https://unsplash.com/s/photos/raccoon" target="_blank">This is a link</a>
+<br>
+<br>
+<br> 
+<br> 
+<br>
+
+
+
 
 <body style="background-color:#E8C8D7;">
  
  
-<b style="color:green;">Learn something about Fluffy: <input id="myText01" type="button" value="Extend a class" onclick="{
+<b style="color:purple;">Learn something about Fluffy: <input id="myText01" type="button" value="Extend a class" onclick="{
 class myAnimal {
     constructor(passName, passAge) {
        this.myName = passName;
@@ -30,6 +72,40 @@ class myCat extends myAnimal {
 }"><br><br>
 
 <div id='myDiv01'>...</div><br>
-                                                                            
-                                                                            
+
+
+<br>
+<br>
+<br>
+<br>
+<h4><b style="border-style:double; border-color:C692FA; " >  Picture of Fluffy</b><br></h4>
    
+<p> point the mouse pointer over the image to enlarges a picture of Fluffy.</p>
+
+<img onmousemove="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://images.unsplash.com/photo-1605199820234-0811f25a3b13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="skunk width="950" height="1033">                    
+
+<script>
+function bigImg(x) {
+  x.style.height = "150px";
+  x.style.width = "150px";
+}
+
+function normalImg(x) {
+  x.style.height = "75px";
+  x.style.width = "75px";
+}
+</script>
+<br>     
+<br>  
+<br>     
+<br>   
+                        
+<h4><b style="border-style:double; border-color:C692FA; " > what do you think about Fluffy</b></h4>
+cute<input type=checkbox><br>
+ugly<input type=checkbox><br>
+weird<input type=checkbox><br>
+dont really care<input type=checkbox><br>
+want one as a pet<input type=checkbox><br>
+<br>
+Submit <input type="submit"><br>     
+    
