@@ -1,4 +1,4 @@
-Version 0.0.2<br>
+Version 0.0.3<br>
 
 
 <body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://preview.pixlr.com/images/450nwm/1149/1/1149101409.jpg"     onkeydown="{
@@ -94,7 +94,8 @@ function myCheckHit(){
  <input type=button value="Auto" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
     clearInterval(myInterval)
     myInterval = setInterval(function(){
-       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 3 + 'px'
+       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3 + 'px'
+       document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3 + 'px'
        myCheckHit()
     } ,20)                                                                                                  
                                                                                                   
