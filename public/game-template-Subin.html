@@ -28,6 +28,7 @@ Version 0.0.3<br>
    let myGlobalX = 0
    let myClock
    let myInterval=0;
+   let myGravity=0;
 
    // global functions here
 function myHitOther(my1,my2){
@@ -93,8 +94,10 @@ function myCheckHit(){
 
  <input type=button value="Auto" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
     clearInterval(myInterval)
+    myGravity = -6;
     myInterval = setInterval(function(){
-       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 3 + 'px'
+       myGravity += 0.3             // mess with this                                                                                   
+       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + myGravity + 'px'
        document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3 + 'px'
        myCheckHit()
     } ,20)                                                                                                  
