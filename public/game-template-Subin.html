@@ -96,7 +96,7 @@ function myCheckHit(){
     clearInterval(myInterval)
     myGravity = -6;
     myInterval = setInterval(function(){
-       myGravity += 0.02             // mess with this                                                                                   
+       myGravity += 0.2             // mess with this                                                                                   
        document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + parseInt(myGravity) + 'px'
        document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 3 + 'px'
        myCheckHit()
