@@ -60,9 +60,26 @@ function myCheckHit(){
    // more if statements here like the above
 
 
+   // checking for window boundaries
+   // far left bounce
+  if( parseInt(document.getElementById('myImg01').style.left) > window.innerWidth - document.getElementById('myImg01').width ){
+      myHorizontalSpeed *= -1
+   }
+  
+  // far right bounce
+  if( parseInt(document.getElementById('myImg01').style.left) < -10  ){
+      myHorizontalSpeed = myHorizontalSpeed * -1
+   }
+
+
+
+}
+
+
 
 }  // end of myCheckHit()
 
+   
 
 </script>
 
