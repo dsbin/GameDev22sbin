@@ -14,6 +14,8 @@ avoid eating the fish</h5>
    let myTimer02
    let myHorizontalSpeed = 10
    let myVeritcalSpeed  = 6
+   let myHorizontalSpeed2 = -10
+   let myVeritcalSpeed2  = -6
    
    // global functions here
 function myHitOther(my1,my2){
@@ -102,9 +104,7 @@ function myCheckHit(){
 
 }
 
-
 </script>
-
 
 
 
@@ -120,10 +120,29 @@ function myCheckHit(){
 }">
 
 
+<br>
+<br>
+<input type=button value="Up" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  clearInterval(myTimer01)
+  clearInterval(myTimer02)
+  myTimer02 = setInterval(function(){
+     document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + myVeritcalSpeed2 + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
+}"><br><br>
 
+  
+<input type=button value="Left" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  clearInterval(myTimer01)
+  clearInterval(myTimer02)
+  myTimer01 = setInterval(function(){
+     document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + myHorizontalSpeed2 + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
+}">
 
-
-<input type=button value="Auto Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  
+<input type=button value="Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   clearInterval(myTimer01)
   clearInterval(myTimer02)
   myTimer01 = setInterval(function(){
@@ -132,16 +151,19 @@ function myCheckHit(){
   }, 50)
 }"><br><br>
   
-  
-<input type=button value="Auto Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+ 
+<input type=button value="Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
   clearInterval(myTimer01)
   clearInterval(myTimer02)
   myTimer02 = setInterval(function(){
      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + myVeritcalSpeed + 'px'
      myCheckHit()     // checks for all collisions
   }, 50)
-}"><br><br>
+}">
 
+  
+  
+  
 
 <img id="myImg01" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9nuetmk67Hfyqs66i-Prfmm_05atu-ZSOZnkbMn_Rnb3tFxkc2iVl0lbZ9C7JRhj4Tt0&usqp=CAU" title="myImg01" style="position:absolute; width:100px; height:80px; left: 50px; top:190px;">
 <img id="myImg02" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg02" style="position:absolute; width:40px;  height:80px; left:350px; top:390px;">
@@ -155,10 +177,6 @@ function myCheckHit(){
 
 <img id="myImg09" src="https://64.media.tumblr.com/81e148659ed8288157fbcd784a2a74d7/tumblr_pet82i4hQb1sox2ufo3_400.gifv" title="myImg09" style="position:absolute; width:20px;  height:50px; left:1330px; top:450px;">
 
-  
-  
-  
-  
   
   
   
