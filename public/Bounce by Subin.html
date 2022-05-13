@@ -88,7 +88,34 @@ function myCheckHit(){
       location = ''
    }
    // more if statements here
-
+  
+   if ( myHitOther('myImg01','myImg10') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   } 
+   
+   if ( myHitOther('myImg01','myImg11') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+   
+   if ( myHitOther('myImg01','myImg12') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+   
+    if ( myHitOther('myImg01','myImg13') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+   
+  
+  
+  
 
    // checking for window boundaries
    // far left bounce
@@ -178,7 +205,10 @@ function myCheckHit(){
 
 <img id="myImg09" src="https://64.media.tumblr.com/81e148659ed8288157fbcd784a2a74d7/tumblr_pet82i4hQb1sox2ufo3_400.gifv" title="myImg09" style="position:absolute; width:20px;  height:50px; left:1330px; top:450px;">
 
-  
+<img id="myImg10" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg10" style="position:absolute; width:40px;  height:80px; left:1370px; top:460px;">
+<img id="myImg11" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg11" style="position:absolute; width:40px;  height:80px; left:1500px; top:160px;">
+<img id="myImg12" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg12" style="position:absolute; width:40px;  height:80px; left:1700px; top:420px;">
+<img id="myImg13" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg13" style="position:absolute; width:40px;  height:80px; left:1520px; top:370px;">
   
   
   
