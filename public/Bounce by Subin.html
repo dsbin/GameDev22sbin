@@ -6,7 +6,7 @@
   
   
 <h4><br><font color=B04D89> Avoid eating the fish</b><br></h4> 
-<h4><br><font color=B04D89> Eat the correct gem to go to the next level</b><br></h4> 
+<h4><br><font color=D22B2B> Eat the correct gem to go to the next level</b><br></h4> 
 <script>
 
    // global variables here
@@ -89,7 +89,16 @@ function myCheckHit(){
       location = ''
    }
    // more if statements here
-  
+
+     if ( myHitOther('myImg01','myImg10') ){
+       alert('wrong gem')
+      document.getElementById('myImg10').style.left = '-400px'
+   }
+   
+   if ( myHitOther('myImg01','myImg11') ){
+       alert('wrong gem')
+      document.getElementById('myImg11').style.left = '-400px'
+   }
    
   
   
