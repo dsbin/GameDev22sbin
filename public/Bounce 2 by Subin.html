@@ -1,0 +1,196 @@
+<body id="myBody"style="background-repeat:repeat; background-size: 80%" background="https://static1.squarespace.com/static/52428a0ae4b0c4a5c2a2cede/t/53272f1fe4b0f08e06c5ead2/1395076895397/clouds%402x.jpg">
+
+<h6> Version 0.0.5</h6>
+<h1 align=center><br><b style="border-style:double; border-color:C692FA; " > Level 1 </b><br></h1> 
+  
+  
+  
+<h4><font color=B04D89> Avoid eating the fish</b></h4> 
+<h4><font color=D22B2B> Eat the correct gem to go to the next level</b></h4> 
+<script>
+
+   // global variables here
+   let myGlobalX = 0
+   let myClock
+   let myTimer01
+   let myTimer02
+   let myHorizontalSpeed = 10
+   let myVeritcalSpeed  = 6
+   let myHorizontalSpeed2 = -10
+   let myVeritcalSpeed2  = -6
+   
+   // global functions here
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+
+function myCheckHit(){
+
+
+  if ( myHitOther('myImg01','myImg02') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+   
+   if ( myHitOther('myImg01','myImg03') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+   
+   if ( myHitOther('myImg01','myImg04') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+  
+   if ( myHitOther('myImg01','myImg05') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+  
+   if ( myHitOther('myImg01','myImg06') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+  
+    if ( myHitOther('myImg01','myImg07') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+  
+    if ( myHitOther('myImg01','myImg08') ){
+       alert('You lose')
+      document.getElementById('myImg01').style.left = '20px'
+      location = 'https://www.google.ca'
+   }
+  
+   if ( myHitOther('myImg01','myImg09') ){
+       alert('You win')
+      document.getElementById('myImg01').style.left = '20px'
+      location = ''
+   }
+   // more if statements here
+
+     if ( myHitOther('myImg01','myImg10') ){
+       alert('wrong gem')
+      document.getElementById('myImg10').style.left = '-400px'
+   }
+   
+   if ( myHitOther('myImg01','myImg11') ){
+       alert('wrong gem')
+      document.getElementById('myImg11').style.left = '-400px'
+   }
+   
+  
+  
+  
+
+   // checking for window boundaries
+   // far left bounce
+  if( parseInt(document.getElementById('myImg01').style.left) > window.innerWidth - document.getElementById('myImg01').width ){
+      myHorizontalSpeed *= -1
+   }
+  
+  // far right bounce
+  if( parseInt(document.getElementById('myImg01').style.left) < -10  ){
+      myHorizontalSpeed = myHorizontalSpeed * -1
+   }
+
+
+
+}
+
+</script>
+
+
+
+<input type=button value="Auto Background Left" onclick="{
+  clearInterval(myClock)
+  let myTemp = '100px 0px'
+  myClock = setInterval(function(){
+      myGlobalX -= 5
+      myTemp =  myGlobalX + 'px 0px'
+      document.getElementById('myBody').style.backgroundPosition = myTemp
+  }, 100)
+    
+}">
+
+
+<br>
+<br>
+<input type=button value="Up" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  clearInterval(myTimer01)
+  clearInterval(myTimer02)
+  myTimer02 = setInterval(function(){
+     document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + myVeritcalSpeed2 + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
+}"><br><br>
+
+  
+<input type=button value="Left" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  clearInterval(myTimer01)
+  clearInterval(myTimer02)
+  myTimer01 = setInterval(function(){
+     document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + myHorizontalSpeed2 + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
+}">
+
+  
+<input type=button value="Right" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  clearInterval(myTimer01)
+  clearInterval(myTimer02)
+  myTimer01 = setInterval(function(){
+     document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + myHorizontalSpeed + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
+}"><br><br>
+  
+ 
+<input type=button value="Down" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  clearInterval(myTimer01)
+  clearInterval(myTimer02)
+  myTimer02 = setInterval(function(){
+     document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + myVeritcalSpeed + 'px'
+     myCheckHit()     // checks for all collisions
+  }, 50)
+}">
+
+  
+  
+  
+
+
+<img id="myImg01" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9nuetmk67Hfyqs66i-Prfmm_05atu-ZSOZnkbMn_Rnb3tFxkc2iVl0lbZ9C7JRhj4Tt0&usqp=CAU" title="myImg01" style="position:absolute; width:100px; height:80px; left: 50px; top:400px;">     
+<img id="myImg02" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg02" style="position:absolute; width:40px;  height:80px; left:350px; top:600px;">
+<img id="myImg03" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg03" style="position:absolute; width:40px;  height:80px; left:480px; top:260px;">
+<img id="myImg04" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg04" style="position:absolute; width:40px;  height:80px; left:700px; top:520px;">
+<img id="myImg05" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg05" style="position:absolute; width:40px;  height:80px; left:1100px; top:640px;">
+<img id="myImg06" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg06" style="position:absolute; width:40px;  height:80px; left:1160px; top:210px;">
+<img id="myImg07" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg07" style="position:absolute; width:40px;  height:80px; left:1330px; top:360px;">
+<img id="myImg08" src="https://www.seekpng.com/png/small/340-3400833_pixel-art-fish-png.png" title="myImg08" style="position:absolute; width:40px;  height:80px; left:830px; top:350px;">
+
+<img id="myImg09" src="https://64.media.tumblr.com/81e148659ed8288157fbcd784a2a74d7/tumblr_pet82i4hQb1sox2ufo3_400.gifv" title="myImg09" style="position:absolute; width:34px;  height:45px; left:1400px; top:560px;">
+<img id="myImg10" src="https://i.pinimg.com/originals/8a/66/51/8a6651d6eb7734a9aec9b2d158179450.gif" title="myImg10" style="position:absolute; width:44px;  height:50px; left:1010px; top:300px;">
+<img id="myImg11" src="https://i.pinimg.com/originals/0f/78/8b/0f788bb2b79834ac3246dc69902e06ad.gif" title="myImg11" style="position:absolute; width:35px;  height:45px; left:880px; top:610px;">
+  
