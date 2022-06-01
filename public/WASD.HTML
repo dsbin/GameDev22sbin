@@ -5,7 +5,7 @@
    let myGlobalX = 0
    let myClock
    let myScore = 10
-
+   let myScore = -10
 
    // global functions here
 function myHitOther(my1,my2){
@@ -68,7 +68,7 @@ function myCheckHit(){
 
 
 
-<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg"  onkeydown="{
+<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://media.istockphoto.com/vectors/pixel-art-star-sky-at-night-vector-id1208374725?k=20&m=1208374725&s=170667a&w=0&h=uUs-qZjNJf3jHkSewBWtMDGTLpyvZ9TDIDjJlAgxXwY="  onkeydown="{
    document.all.myText01.value = event.key
    if (event.key == 'd') {  // d = go right
      document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
@@ -76,6 +76,15 @@ function myCheckHit(){
    if (event.key == 's') {   // s = go down
       document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 + 'px'
    }  
+    if (event.key == 'a') {  // a = go left
+     document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 + 'px'
+   }   
+   if (event.key == 'w') {   // w = go up
+      document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) -10 + 'px'
+   }    
+   
+   
+   
    // put more here
   myCheckHit()     // checks for all collisions
 }">
